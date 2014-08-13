@@ -1,0 +1,13 @@
+---
+markdown: kramdown
+kramdown:
+  input: GFM
+pygments: true
+baseurl: "/redmine_draw_erd"
+encoding: UTF-8
+exclude:
+- README.md
+- tmp
+name: Redmine Draw ERD
+copyright: 2014, ogom
+theme: spacelab
