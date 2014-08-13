@@ -1,8 +1,9 @@
 Redmine Draw ERD
 ================
 
-Generate Entity Relationship Diagrams of Redmine.  
-[Redmine Draw ERD plugin](#) to output only the specified model.
+Generate Entity Relationship Diagrams of Redmine.
+
+* [Redmine Draw ERD plugin](http://www.redmine.org/plugins/redmine_draw_erd) to output only the specified model.
 
 ## Installation
 
@@ -13,9 +14,17 @@ $ bundle install
 
 ## Usage
 
+### View
+
+* Select the schema, and then click Apply.
+
+![view_erd](http://ogom.github.io/redmine_draw_erd/assets/img/view_erd.png)
+
+### Rake
+
 ```
 $ bundle exec rake redmine:draw:erd
-$ open ./tmp/pdf/project.png
+$ open ./tmp/draw/project.png
 ```
 
 ## Use
