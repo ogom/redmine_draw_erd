@@ -1,2 +1,3 @@
-# Plugin's routes
-# See: http://guides.rubyonrails.org/routing.html
+RedmineApp::Application.routes.draw do
+   match '/draw_erd', to: 'draw_erd#index', via: :get
+end

@@ -1,0 +1,22 @@
+<h2>Draw ERD</h2>
+
+<div class="box">
+  <%= image_tag('draw_erd/ERD.png') %>
+</div>
+
+<% content_for :sidebar do %>
+<%= form_tag({}, :method => :get) do %>
+<h3>Schemas</h3>
+<p><%= submit_tag l(:button_apply), :class => 'button-small', :name => nil %></p>
+<ul>
+<% @schemas.each do |schema| %>
+  <li>
+    <label for="<%=schema%>">
+      <%= check_box :schemas, schema, {checked: @domains.include?(schema)}, true, false %>
+      <%= schema %>
+    </label>
+  </li>
+<% end %>
+</ul>
+<% end %>
+<% end %>
